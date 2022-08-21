@@ -1,0 +1,169 @@
+1. Data science can be divided into two parts:
+Ans:
+A. Data curation and data analytics 
+
+False:
+A. Data collection and data analytics
+B. Data analytics and data policy
+C. All of the above
+D. None of the above
+
+
+2. What is the difference between data curation and data analytics?
+Ans:
+A. Data analytics focuses on extracting knowledge from data and data curation focusing on managing data to support data analytics.
+
+False:
+A. They are at different level of abstraction
+B. Data curation is used for extracting knowledge and Data analytics helps facilitate findability of a dataset
+C. Data curation only starts after data analytics is complete
+
+
+
+3. Our definition of data science concerns itself with all aspects of the following? Please check all that apply.
+Ans:
+A. All of the above
+
+False:
+A. Creation
+B. Management
+C. Analysis
+D. Communication
+
+
+
+4. The
+Illinois definition of data curation is [fill in the blanks]: 
+
+According to the
+University of Illinois [School of information sciences], data curation is the
+active and on-going XXXX of data
+through its lifecycle of interest and usefulness to scholarship, science and
+education; Curation activities enable data discovery and retrieval, maintain
+quality, add value, and provide for re-use over time.”
+
+- “An education program on data Curation” ALA science and Technology
+Section Conference, Cragin, Melissa; Heirdorn, P. Bryan; Palmer, Carole L.;
+Smith, Linda C. (2007)
+
+The word that should replace XXXX is:
+
+
+Ans:
+A. management
+
+False:
+A. creation
+B. analysis
+C. monetization
+D. anonymization
+
+
+
+5. Which of these is an area of curatorial effort? Please check all that apply.
+Ans:
+A. All of the above
+
+False:
+A. Organization
+B. Preservation
+C. Reformatting
+D. Workflow
+E. Communication
+F. Compliance
+
+
+
+6. Which of these is a method of curatorial action? Please check all that apply.
+Ans:
+A. All of the above
+
+False:
+A. Analysis
+B. Documentation
+C. System Design and Implementation
+D. Policy
+E. Process
+
+
+7. What is of particular importance in the curatorial area of organization?
+Ans: 
+A. Documenting Schemas
+
+False:
+A. Selecting an appropriate SDK 
+B. Preserving the data for future use
+C. Storing Data Safely
+
+
+8. Why is discoverability important?
+Ans:
+A. Because relevant data must be found if it is to be used
+
+False:
+A. Because this provides a stress test for the data model    
+B. Because data must be found in order to be removed
+C. Because otherwise it cannot be organized
+D. Because we want to feel like explorers
+
+
+9. What are some the obstacles to sharing? Please check all that apply.
+Ans:
+A. All of the above
+
+False:
+A. Lack of documentation
+B. Different formats
+C. Different data concepts
+
+
+
+
+10. What is meant by integration?
+Ans:
+A. Supporting combining data from different sources
+
+False:
+A. Ensuring that all legal, regulatory, and local policy requirements are met
+B. Ensuring that that the data is valid.
+C. Supporting the ability to retrieve and distribute the data
+
+
+
+
+11. What is provenance?
+Ans:
+A. The inputs and calculations that are responsible for the data values
+
+False:
+A. The event that created the data
+B. Some place in France where data originated
+C. Managing of corrections and updates    
+
+
+
+
+
+12. There are several kinds of compliance; one important one is:
+Ans:
+A. Ensuring that legal, regulatory and local policy requirements are met
+
+False:
+A. Ensuring that that corrections and updates are done
+B. Determining the origin of the data
+C. None of the above
+
+
+
+13. Why is security important in data curation?
+Ans:
+A. It prevents tampering and/or inappropriate access and distribution
+
+False:
+A. It provides a stress test for the data model
+B. It ensures reproducibility
+C. Who doesn’t like the movie The Bodyguard?
+D. All of the above
+
+
+
