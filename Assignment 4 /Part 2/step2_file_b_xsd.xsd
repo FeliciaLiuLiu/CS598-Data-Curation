@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="consumerComplaints">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="complaint">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice maxOccurs="unbounded">
+                                <xs:element maxOccurs="unbounded" name="event">
+                                    <xs:complexType>
+                                        <xs:attribute name="type" type="xs:string" use="required" />
+                                        <xs:attribute name="date" type="xs:date" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="product">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="productType" type="xs:string" />
+                                            <xs:element minOccurs="0" name="subproduct" type="xs:string" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="issue">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="issueType" type="xs:string" />
+                                            <xs:element minOccurs="0" name="subissue" type="xs:string" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="consumerNarrative" type="xs:string" />
+                                <xs:element name="company">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="companyName" type="xs:string" />
+                                            <xs:element name="companyState" type="xs:string" />
+                                            <xs:element name="companyZip" type="xs:unsignedInt" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="submitted" />
+                                <xs:element name="response">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element minOccurs="0" name="publicResponse" type="xs:string" />
+                                            <xs:element name="responseType" type="xs:string" />
+                                        </xs:sequence>
+                                        <xs:attribute name="timely" type="xs:string" use="optional" />
+                                        <xs:attribute name="consumerDisputed" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedInt" use="required" />
+                        <xs:attribute name="submissionType" type="xs:string" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

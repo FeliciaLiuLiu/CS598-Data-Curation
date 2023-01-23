@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="participants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="participant">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="infos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="info">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="mridate" type="xs:unsignedInt" />
+                                                    <xs:element name="age" type="xs:unsignedByte" />
+                                                    <xs:element name="sex" type="xs:unsignedByte" />
+                                                    <xs:element name="race" type="xs:unsignedByte" />
+                                                    <xs:element name="weight" type="xs:decimal" />
+                                                    <xs:element name="height" type="xs:decimal" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="activities">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="activity">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="packyrs" type="xs:decimal" />
+                                                    <xs:element name="yrsquit" type="xs:unsignedByte" />
+                                                    <xs:element name="alcoh" type="xs:decimal" />
+                                                    <xs:element name="physact" type="xs:decimal" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="indicators">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="indicator">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="chf" type="xs:unsignedByte" />
+                                                    <xs:element name="chd" type="xs:unsignedByte" />
+                                                    <xs:element name="stroke" type="xs:unsignedByte" />
+                                                    <xs:element name="diabet" type="xs:unsignedByte" />
+                                                    <xs:element name="genhlth" type="xs:unsignedByte" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="labs">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lab">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ldh" type="xs:unsignedByte" />
+                                                    <xs:element name="alb" type="xs:decimal" />
+                                                    <xs:element name="crt" type="xs:decimal" />
+                                                    <xs:element name="plt" type="xs:unsignedShort" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="measurements">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="measurement">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="sbp" type="xs:decimal" />
+                                                    <xs:element name="aai" type="xs:decimal" />
+                                                    <xs:element name="fev" type="xs:decimal" />
+                                                    <xs:element name="dsst" type="xs:unsignedByte" />
+                                                    <xs:element name="atrophy" type="xs:unsignedByte" />
+                                                    <xs:element name="whgrd" type="xs:unsignedByte" />
+                                                    <xs:element name="numinf" type="xs:unsignedByte" />
+                                                    <xs:element name="volinf" type="xs:decimal" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="obstime" type="xs:unsignedShort" />
+                            <xs:element name="death" type="xs:unsignedByte" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
